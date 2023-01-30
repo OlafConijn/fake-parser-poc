@@ -67,17 +67,17 @@ Both programs analyse the same source code and print out the same variables.
 The output of either program is expected to be:
 ``` plain
 before narrowing to either Cat or Dog
-variable catName_0  has type any
-variable dogName_0  has type any
+variable catName_0  has type error
+variable dogName_0  has type error
 variable age_0      has type number
 
 after narrowing to Cat
 variable catName_1  has type string
-variable dogName_1  has type any
+variable dogName_1  has type error
 variable age_1      has type number
 
 after narrowing to Dog
-variable catName_2  has type any
+variable catName_2  has type error
 variable dogName_2  has type string
 variable age_2      has type number
 ```
